@@ -15,10 +15,6 @@ services:
             context: php7-fpm
             args:
                 TIMEZONE: ${TIMEZONE}
-                USER_ID: ${USER_ID}
-                USER_NAME: ${USER_NAME}
-                GROUP_ID: ${GROUP_ID}
-                GROUP_NAME: ${GROUP_NAME}
         volumes:
             - ${SYMFONY_APP_PATH}:/var/www/symfony
             - ./logs/symfony:/var/www/symfony/app/logs

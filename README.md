@@ -12,6 +12,9 @@ Docker-symfony gives you everything you need for developing Symfony application.
 
     ```bash
     cp .env.dist .env
+    echo -e "\n## Numeric and litteral system user group & id" >> .env
+    echo -e "GROUP_ID=$(id -g)\nGROUP_NAME=$(id -gn)" >> .env
+    echo -e "USER_ID=$(id -u)\nUSER_NAME=$(id -un)" >> .env
     ```
 
 
